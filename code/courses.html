@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elzero</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Css framework -->
+    <link rel="stylesheet" href="framework.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- Main Css stylesheet -->
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <div class="page d-flex">
+      <!--  Start sidebar  -->
+      <div class="sidebar bg-white p-20 relative">
+        <h3 class="relative txt-c mt-0 cap">elzero</h3>
+        <ul class="p-0 ls-non">
+          <li>
+            <a href="index.html" class="fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span class="cap hide-mobile fs-14">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <i class="fa-solid fa-gear"></i>
+              <span class="cap hide-mobile fs-14">setting</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <i class="fa-regular fa-user"></i>
+              <span class="cap hide-mobile fs-14">profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" class="fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="cap hide-mobile fs-14">projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" class="active fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <i class="fa-regular fa-chart-bar"></i>
+              <span class="cap hide-mobile fs-14">courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" class=" fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <!-- <i class="fa-solid fa-user-plus"></i> -->
+              <i class="fa-solid fa-users"></i>
+              <span class="cap hide-mobile fs-14">friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" class=" fs-14 d-flex align-c txt-c c-black r-6 p-10">
+            <!-- <i class="fa-regular fa-folder-closed"></i> -->
+              <i class="fa-regular fa-folder-open"></i>
+              <span class="cap hide-mobile fs-14">files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" class=" fs-14 d-flex align-c txt-c c-black r-6 p-10">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span class="cap hide-mobile fs-14 ">plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--  End sidebar  -->
+      <!--  Start content  -->
+      <div class="content w-full overflow-h">
+        <!--  Start head  -->
+        <div class="head bg-white p-15 pl-20 pr-20 d-flex">
+          <div class="search relative flex-1">
+            <input type="search" class="p-10 r-10" id="search" >
+            <label for="search">
+            </label>
+          </div>
+          <div class="icons d-flex space-between align-c gap-10">
+            <span class="notification relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="../pics/avatar.png" alt="" class="img-fit">
+          </div>
+        </div>
+        <!--  End head  -->
+        <div class="courses-container">
+          <div class="heading m-20 mobile-m-15 relative">
+            <h1 class="h1 cap mr-20">courses</h1>
+            <span class="courses progress w-full"><span class="target" style="width: 60%"></span></span>
+          </div>
+          <!-- start wrapper -->
+          <div class="wrapper d-grid p-20 mobile-p-15 gap-20 ">
+            <!-- projects reviewer -->
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/design-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/avatar.png" alt="">
+              <div class="parent bg-white border-t-eee p-20   mobile-p-15  ">
+                <p class="not-me m-0 fw-600">master web design</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">master the art of web designing and media queries and know everything about breakpoint.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 650</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 90</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/php-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-3.png" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20 mobile-p-15">
+                <p class="not-me m-0 fw-600">php examples</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">php tutorial and examples and practice on web application and connecting with databases.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/algorighms-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-4.png" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20 mobile-p-15">
+                <p class="not-me m-0 fw-600">data structure and algorithms</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">mastering the art of data structure and famous algorithms like sorting , dividing and conquering.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/design2-poster.png" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-2.jpg" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">master web design</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">master the art of web designing and media queries and know everything about breakpoint.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img border-b-eee" src="../pics/courses/python-poster.png" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-1.png" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">mastering python</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">mastering python to prepare for data science and ai and automation things in your life.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/resposive2-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-5.jpg" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">responsive web design</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">mastering responsive web design and media queries and know everything about breakpoint.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/syper-security-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-3.png" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative ent p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">fully saved</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">mastering the art of data structure and famous algorithms like sorting , dividing and conquering.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/resposive-poster.png" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-5.jpg" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">master web design</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">elzero dashboard project design and programming.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/mastering-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/avatar.png" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">responsive web design</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">mastering responsive web design and media queries and know everything about breakpoint.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+            <div class="section p-0 courses-reviewer overflow-h" data-date="27/05/2023">
+              <img class="cors-img" src="../pics/courses/python-poster.jpg" alt="">
+              <img class="img-fit" src="../pics/profiles/profile-1.png" alt="">
+              <div class="parent bg-white border-t-eee z-1 relative p-20     mobile-p-15">
+                <p class="not-me m-0 fw-600">python mastering</p>
+                <p class="not-me mt-20 mb-20 fs-13 c-gray">mastering python to prepare for data science and ai and automation things in your life.</p>
+                <div class="child relative d-flex space-between pt-15 c-gray fs-14 border-t-eee">
+                  <span><i class="fa-regular fa-user"></i> 950</span>
+                  <span><i class="fa-solid fa-dollar-sign"></i> 165</span>
+                  <a class="btn-shape" href="">course info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End wrapper -->
+        </div>
+      </div>
+      <!--  End content  -->
+    </div>
+    <!-- End page -->
+  </body>
+</html>
