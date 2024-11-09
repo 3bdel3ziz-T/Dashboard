@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  margin: 0;
+  background-color: #d1d6e19a;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+}
+textarea,
+input[type="text"] {
+  border: none;
+  outline: none;
+  border: 1px solid #eee;
+  text-transform: capitalize;
+}
+input[type="text"]:hover,
+input[type="email"]:hover {
+  border: 1px solid #ccc;
+}
+input[type="checkbox"] {
+  user-select: none;
+}
+textarea:focus,
+input[type="text"]:focus {
+  border: 1px solid var(--gray-color);
+}
+input[type="email"]:focus {
+  outline: none;
+  border: 1px solid var(--gray-color);
+}
+textarea:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+}

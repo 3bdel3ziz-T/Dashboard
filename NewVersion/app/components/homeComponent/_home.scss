@@ -1,0 +1,438 @@
+/* Start content */
+/* head */
+.head .search label::after {
+  font-family: "font awesome 6 free";
+  content: "\f002";
+  font-weight: 900;
+  position: relative;
+  top: 2px;
+  left: -33px;
+  font-size: 18px;
+  color: black;
+  transition: 0.3s;
+}
+.head .search input {
+  border: none;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 20px;
+}
+.head .search input:focus {
+  border-radius: 16px;
+  padding: 15px;
+  outline: 1px solid var(--blue-color);
+  width: 85%;
+}
+.head .search input:focus + label::after {
+  color: var(--blue-color);
+}
+.head .icons .notification::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  left: -3px;
+}
+.heading {
+  width: fit-content;
+}
+/* Start wrapper */
+/* welcome widget */
+.welcome > div img {
+  width: 111px;
+  top: -70px;
+  right: 0px;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
+/* Start section component  */
+.section {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .section {
+    padding: 15px;
+  }
+}
+.section > h2 {
+  margin: 0;
+}
+.section .no-p {
+  margin-bottom: 20px;
+}
+.section > p:not(.not-me) {
+  color: var(--gray-color);
+  margin: 5px 0 20px;
+}
+/* End section component  */
+.wrapper .body > a:hover {
+  background-color: var(--blue-alt-color);
+}
+.wrapper .body > div > img {
+  width: 65px;
+  top: -50px;
+  left: 40px;
+  border: 5px solid white;
+}
+@media (max-width: 767px) {
+  .wrapper .body > div > img {
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* quick draft widget */
+.wrapper .quick-draft textarea {
+  min-height: 120px;
+  resize: none;
+}
+/* yearly target widget */
+.wrapper .target-w .container .icon {
+  width: 60px;
+  height: 60px;
+}
+.wrapper .target-w .container .content .target {
+  height: 4px;
+}
+.blue {
+  background-color: var(--blue-bg-color);
+}
+.orange {
+  background-color: var(--orange-bg-color);
+}
+.green {
+  background-color: var(--green-bg-color);
+}
+.money-percent::after,
+.project-percent::after,
+.team-percent::after {
+  display: block;
+  position: relative;
+  top: -45px;
+  left: calc(100% - 15px);
+  font-size: 12px;
+  width: fit-content;
+  color: white;
+  padding: 3px 5px;
+  text-align: center;
+  border-radius: 6px;
+}
+.money-percent::after {
+  content: attr(money-target);
+  background-color: var(--blue-color);
+}
+.project-percent::after {
+  content: attr(project-target);
+  background-color: var(--orange-color);
+}
+.team-percent::after {
+  content: attr(team-target);
+  background-color: var(--green-color);
+}
+.money-percent::before,
+.project-percent::before,
+.team-percent::before {
+  content: "";
+  position: relative;
+  top: -10px;
+  right: calc(-100% + 5px);
+  display: block;
+  width: 0px;
+  height: 100%;
+  border: 6px solid;
+}
+.money-percent::before {
+  border-color: var(--blue-color) transparent transparent;
+}
+.project-percent::before {
+  border-color: var(--orange-color) transparent transparent;
+}
+.team-percent::before {
+  border-color: var(--green-color) transparent transparent;
+}
+/* tickets widget */
+.wrapper .tickets .container {
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+@media (max-width: 767px) {
+  .wrapper .tickets .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* latest news widget */
+.wrapper .latest-news .container .content img {
+  width: 100px;
+  height: 70px;
+}
+@media (max-width: 767px) {
+  .wrapper .latest-news .container .content .txt {
+    padding-bottom: 10px;
+  }
+}
+/* latest tasks widget */
+@media (min-width: 768px) {
+  .wrapper .latest-tasks .container .content {
+    align-items: center;
+  }
+}
+.done {
+  opacity: 0.4;
+}
+.done h4,
+.done span {
+  color: var(--gray-color);
+  text-decoration: line-through;
+}
+.done i {
+  color: var(--gray-color);
+}
+.delete {
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+}
+.delete::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.delete:hover {
+  background-color: var(--red-bg-color);
+}
+/* latest uploads */
+.section .container .content .file-shape i {
+  font-size: 35px;
+}
+.section .container .content .file-shape::before {
+  font-size: 8px;
+  padding: 3px 5px;
+  top: 13px;
+  left: -7px;
+  border-radius: 5px;
+}
+/* last project */
+/* .last-project .container {
+	background-image: ; 
+} */
+
+.last-project .container::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+  position: absolute;
+  left: 11px;
+}
+.last-project .container .blue-circle {
+  margin-left: 35px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.last-project .container .blue-circle::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  outline: 2px solid var(--blue-color);
+}
+.last-project .container .blue-circle.finished::before {
+  background-color: var(--blue-color);
+}
+.last-project .container .blue-circle.finished::after {
+  font-family: "font Awesome 6 free";
+  content: "\f00c";
+  color: white;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  font-size: 14px;
+}
+.last-project .container .blue-circle.current::before {
+  animation: chang-color 1s infinite ease-in-out alternate;
+}
+.last-project .container .blue-circle.current::after {
+  font-family: "font Awesome 6 free";
+  content: "\f2f1";
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 3px;
+  left: -30px;
+  animation: spinning 1s ease-in-out infinite;
+}
+@keyframes chang-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.last-project img {
+  width: 100px;
+  position: absolute;
+}
+/* reminders */
+.shape {
+  border-left: 4px solid;
+  font-weight: 600;
+  margin-left: 25px;
+}
+.reminders .txt::before {
+  content: "";
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -28px;
+  top: 13px;
+}
+.blue-border {
+  border-color: var(--blue-color);
+}
+.green-border {
+  border-color: var(--green-color);
+}
+.orange-border {
+  border-color: var(--orange-color);
+}
+.red-border {
+  border-color: var(--red-color);
+}
+.reminders .txt.blue-border::before {
+  background-color: var(--blue-color);
+}
+.reminders .txt.green-border::before {
+  background-color: var(--green-color);
+}
+.reminders .txt.orange-border::before {
+  background-color: var(--orange-color);
+}
+.reminders .txt.red-border::before {
+  background-color: var(--red-color);
+}
+/* social media  */
+.socialmedia .container .box .icon {
+  width: 60px;
+  height: 60px;
+}
+/* twitter color */
+.c-twitter {
+  color: var(--c-twitter);
+}
+.bg-alt-twitter {
+  background-color: var(--c-twitter);
+}
+.bg-twitter {
+  background-color: var(--bg-twitter);
+}
+/* facebook color */
+.c-facebook {
+  color: var(--c-facebook);
+}
+.bg-alt-facebook {
+  background-color: var(--c-facebook);
+}
+.bg-facebook {
+  background-color: var(--bg-facebook);
+}
+/* youtube color */
+.c-youtube {
+  color: var(--c-youtube);
+}
+.bg-alt-youtube {
+  background-color: var(--c-youtube);
+}
+.bg-youtube {
+  background-color: var(--bg-youtube);
+}
+/* linkedin color */
+.c-linkedin {
+  color: var(--c-linkedin);
+}
+.bg-alt-linkedin {
+  background-color: var(--c-linkedin);
+}
+.bg-linkedin {
+  background-color: var(--bg-linkedin);
+}
+/* project table */
+.content .projects table {
+  width: 100%;
+  min-width: 1180px;
+  text-align: left;
+  border-spacing: 0;
+}
+.content .projects table thead tr th {
+  background-color: #eee;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content .projects table tbody tr td {
+  padding: 20px;
+  border: 1px solid #eee;
+  font-size: 16px;
+  font-weight: 500;
+}
+.content .projects table tbody tr td span {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  text-transform: capitalize;
+}
+.content .projects table tbody tr td .pending {
+  background-color: var(--orange-color);
+}
+.content .projects table tbody tr td .in-prog {
+  background-color: var(--blue-color);
+}
+.content .projects table tbody tr td .completed {
+  background-color: var(--green-color);
+}
+.content .projects table tbody tr td .rejected {
+  background-color: var(--red-color);
+}
+@media (max-width: 767px) {
+  .content .projects table thead tr th {
+    padding: 5px 100px 5px 5px;
+  }
+  .content .projects table tbody tr td {
+    padding: 5px;
+  }
+}
+/* End content */

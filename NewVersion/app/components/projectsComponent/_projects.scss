@@ -1,0 +1,34 @@
+
+/* Start projects reviewer page */
+.projects-reviewer::after {
+  content: attr(data-date);
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  color: var(--gray-color);
+  font-size: 13px;
+}
+.projects-reviewer .project .parent .child {
+  display: flex;
+  gap: 5px;
+}
+.projects-reviewer .project.progress,
+.projects-reviewer .project.progress > .target {
+  height: 8px;
+}
+.projects-reviewer .project.progress > .target {
+  background-color: var(--green-color);
+}
+.projects-reviewer .project.progress.completed > .target {
+  background-color: var(--blue-color);
+  width: 100% !important;
+}
+.projects-reviewer .project.progress.pending > .target {
+  background-color: var(--orange-color);
+  width: 100% !important;
+}
+.projects-reviewer .project.progress.rejected .target {
+  background-color: var(--red-color);
+  width: 100% !important;
+}
+/* End projects reviewer page */

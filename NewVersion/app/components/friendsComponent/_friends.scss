@@ -1,0 +1,27 @@
+@use "../../styles/variables" as *;
+
+/* Start friends page */
+.friends-container .wrapper .section .contact {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.friends-container .wrapper .section .contact i {
+  width: 30px;
+  height: 30px;
+}
+.friends-container .wrapper .section .friend-profile {
+  width: 100px;
+  height: 100px;
+}
+.friends-container .wrapper .section.vip h2::after {
+  font-family: "font Awesome 6 free";
+  content: "\f058";
+  position: absolute;
+  font-weight: 900;
+  color: var(--blue-color);
+  font-size: 18px;
+  top: 5px;
+  margin-left: 5px;
+}
+/* End friends page */

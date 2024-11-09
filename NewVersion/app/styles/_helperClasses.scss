@@ -1,0 +1,56 @@
+@use "./variables" as *;
+/* Progress component */
+.progress,
+.progress > .target {
+  border-radius: 10px;
+  position: absolute;
+  background-color: #eee;
+  width: 180px;
+  height: 3px;
+}
+.progress {
+  position: relative;
+  display: block;
+}
+.progress > .target {
+  width: 10%;
+  background-color: black;
+}
+/* Skill shape component */
+.skl-shape {
+  padding: 4px 8px;
+  background-color: #eee;
+  text-transform: capitalize;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* File shape component */
+.file-shape::before {
+  content: attr(data-extend);
+  position: absolute;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+}
+.file-shape.pdf::before {
+  background-color: #f15642;
+}
+.file-shape.avi::before {
+  background-color: #0075ff;
+}
+.file-shape.eps::before {
+  background-color: #f7b84e;
+}
+.file-shape.psd::before {
+  background-color: #51bee8;
+}
+.file-shape.dll::before {
+  background-color: #576d7e;
+}
+.file-shape.png::before {
+  background-color: #a066aa;
+}

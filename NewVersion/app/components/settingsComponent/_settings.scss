@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+
+/*Start Settings page */
+.h {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.p {
+  color: var(--gray-color);
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+/* control */
+.control .parent textarea {
+  min-height: 140px;
+}
+.social .parent .child i {
+  width: 43px;
+}
+.social .parent .child:hover,
+.social .parent .child:hover > i {
+  border-color: #ddd;
+}
+.backup-manager .parent .child .storage.choice {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+/*End Settings page */

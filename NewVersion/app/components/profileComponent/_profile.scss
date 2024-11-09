@@ -1,0 +1,85 @@
+@use "../../styles/variables" as *;
+
+/* Start profile page */
+.profile-controls > .parent {
+  padding: 0 40px;
+}
+.profile-controls .parent .child img {
+  width: 150px;
+  height: 150px;
+}
+.profile-controls .parent .child .progress {
+  height: 0;
+}
+.profile-controls .parent .child .progress::before,
+.profile-controls .parent .child .progress::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #ccc;
+  display: block;
+  transform: translate(-10px, -5px);
+}
+.profile-controls .parent .child .progress::after {
+  background-color: var(--blue-color);
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .profile-controls .parent {
+    gap: 20px;
+    padding: 0 0 15px;
+    margin: 0 15px 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #eee;
+    border-right: none;
+  }
+  .profile-controls .parent .child {
+    text-align: left;
+  }
+  .profile-controls .parent .child .progress::before,
+  .profile-controls .parent .child .progress::after {
+    transform: translate(0, -5px);
+  }
+  .profile-controls .parent .child img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+  }
+}
+.profile-controls .controls .box .info-line span {
+  width: 270px;
+}
+.profile-controls .controls .box .info-line label {
+  user-select: none;
+}
+.profile-controls .controls .box .info-line label div {
+  width: 80px;
+  height: 20px;
+  user-select: none;
+}
+.profile-controls .controls .box .info-line label div::before {
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  user-select: none;
+}
+.profile-controls
+  .controls
+  .box
+  .info-line
+  .check-box.shape-two
+  input[type="checkbox"]:checked
+  + div::before {
+  left: calc(100% - 16px);
+}
+/* my skills  */
+.my-skills {
+  width: 40%;
+}
+.my-skills .child {
+  flex-wrap: wrap;
+}
+/* End profile page */

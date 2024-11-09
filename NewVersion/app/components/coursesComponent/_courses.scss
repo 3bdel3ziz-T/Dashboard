@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+
+.courses-container .wrapper,
+.friends-container .wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.courses-container .wrapper .cors-img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 0;
+}
+.courses-container .wrapper .cors-img:hover {
+  transform: scale(1.2) rotate(4deg);
+}
+.courses-container .wrapper .img-fit {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+
+  border: 3px solid white;
+}
+.courses-container .wrapper .parent .child .btn-shape {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+}

@@ -1,0 +1,51 @@
+@use "../../styles/variables" as *;
+
+/* Start plans page */
+.plans-container .wrapper .border {
+  border: 5px solid white;
+  height: 100%;
+  width: 100%;
+}
+.plans-container .wrapper .price {
+  height: 150px;
+  padding: 5px;
+}
+.plans-container .wrapper .features li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.plans-container .wrapper .features li::after,
+.plans-container .wrapper .features li::before {
+  font-family: "font Awesome 6 free";
+  font-weight: 800;
+  font-size: 15px;
+  position: relative;
+  margin-right: 8px;
+}
+.plans-container .wrapper .features li.include::before {
+  content: "\f00c";
+  color: var(--green-color);
+}
+.plans-container .wrapper .features li.not-include::before {
+  content: "\f00d";
+  color: var(--red-color);
+}
+.plans-container .wrapper .features li::after {
+  content: "\f05a";
+  color: var(--gray-color);
+  position: absolute;
+  right: 0;
+}
+.plans-container .wrapper .features + a {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+.plans-container .wrapper .features + a.current {
+  color: var(--gray-color);
+  background-color: transparent;
+  width: 100%;
+}
+/* End plans page */
